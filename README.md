@@ -16,11 +16,19 @@ Finding the forward kinematic solution of a 2-link planar manipulator. Use the f
 
 Assume the link lengths to be l1 and l2, respectivley, with coresponding joint angles of &alpha; and &beta;.
 
-To find the manipulator's forward knematic, we ned to find the end effectors position: x2, y2.
+To find the manipulator's forward knematic, we need to find the end effectors position: x<sub>2</sub>, y<sub>2</sub>.
 
 First, we should find the positioning of the second joint:
 
 x<sub>1</sub> = l<sub>1</sub>\*cos(&alpha;)
+
+y<sub>1</sub> = l<sub>1</sub>\*sin(&alpha;)
+
+These are then used to find the end effectors position: x<sub>2</sub>, y<sub>2</sub>.
+
+x<sub>2</sub> = x<sub>1</sub> + l<sub>2</sub>\*cos(&alpha;+&beta;)
+
+y<sub>2</sub> = y<sub>1</sub> + l<sub>2</sub>\*sin(&alpha;+&beta;)
 
 ## Simulation
 
