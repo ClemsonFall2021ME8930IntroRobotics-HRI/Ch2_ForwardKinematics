@@ -44,7 +44,7 @@ To start, the base needs to be created by set the dimensions of the first cuboid
   
 | Setting the Base Dimensions |
 | :-------------------------: |
-| <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20d%20-%20Simulation%20-%20SettingLinkLength0.5.PNG" width="400"|
+| <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20d%20-%20Simulation%20-%20SettingLinkLength0.5.PNG" width="400"> |
        
 This is repeated for links 1 and 2 with lengths of 1 and 0.5, respectively.
        
@@ -52,7 +52,7 @@ Once a joint is added, to change the length to 0.3m and diameter to 0.1m, double
        
 | Setting the Joint Dimensions |
 | :--------------------------: |
-| <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20e%20-%20Simulation%20-%20SettingJointDimensions.PNG" width="400" |
+| <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20e%20-%20Simulation%20-%20SettingJointDimensions.PNG" width="400"> |
 
 ### Coding
 
