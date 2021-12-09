@@ -17,6 +17,8 @@ Finding the forward kinematic solution of a 2-link planar manipulator. Use the f
 
 Assume the link lengths to be l1 and l2, respectivley, with coresponding joint angles of $\alpha$ and $\beta$
 
+&omega; | &#969; | Greek small letter omega | ω |
+
 ## Simulation
 
 ### Scene setup:
