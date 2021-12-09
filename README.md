@@ -39,8 +39,20 @@ Open the "TwoPlanarManipulator_Simulation.ttt" file. For this problem, we create
 | Add Link | Add Joint |
 | :------: | :-------: |
 | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20b%20-%20Simulation%20-%20AddCuboid.PNG" width="400"> | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20c%20-%20Simulation%20-%20AddRevolute.PNG" width="400"> |
+
+To start, the base needs to be created by set the dimensions of the first cuboid added to 0.1 for the x and y components and 0.5 for the z component.
   
-Set the length of link 1 to 1 by keeping the x and y variables at 0.1 and changing the z variable to 1.
+| Setting the Base Dimensions |
+| :-------------------------: |
+| <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20d%20-%20Simulation%20-%20SettingLinkLength0.5.PNG" width="400"|
+       
+This is repeated for links 1 and 2 with lengths of 1 and 0.5, respectively.
+       
+Once a joint is added, to change the length to 0.3m and diameter to 0.1m, double click on the blue icon in the Scene hierachy to bring up the Scene Object Properties dialogue box.
+       
+| Setting the Joint Dimensions |
+| :--------------------------: |
+| <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20e%20-%20Simulation%20-%20SettingJointDimensions.PNG" width="400" |
 
 ### Coding
 
