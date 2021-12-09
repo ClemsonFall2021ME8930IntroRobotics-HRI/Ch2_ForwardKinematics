@@ -68,11 +68,11 @@ To rotate each of these objects/items to their resepctive orientations (if neede
   
 Next, it must be defined on where the manipulator should go. To do this, "Add > Dummy". Add two Dummy's in and rename one of the Dummy's to be labelled as "Target". The Target Dummy is the input for the forward kinematic. It must remain in the same plane as our final link as the manipulator as we are only dealing with revolute joints to create the 2-Link Planar Manipulator. The reamining Dummy should be centered at the end of link 2.
   
-It is important to make sure all the correct properties are set. For each link, double click on the cuboid logo to bring up the "Scene Object Properties". For all cuboids, stay in the "Shape" tab, click on "Show Dynamic Properties Dialog" and unselect "Body is dynamic". If this is not deselected, then the link will fall to the ground due to gravity. For the base cuboid, click on the "Common" tab and select "Object is model base".
+It is important to make sure all the correct properties are set. For each link, double click on the cuboid logo to bring up the "Scene Object Properties". For all cuboids, stay in the "Shape" tab, click on "Show Dynamic Properties Dialog" and unselect "Body is dynamic". If this is not deselected, then the link will fall to the ground due to gravity. For the base cuboid, click on the "Common" tab and select "Object is model base". For each joint, double click on the revolute joint logo to bring up the "Scene Object Properties". For all joints, stay in the "Joint" tab and change the Mode to "Passive Mode" to enable to the joint to drive the connected link.
   
-| All Cuboids Properties | Base Cuboid Properties |
-| :---------------: | :---------: |
-| <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20j%20-%20Simulation%20-%20AllCuboidProperties.PNG" width="400"> | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20k%20-%20Simulation%20-%20BaseCuboidProperties.PNG" width="400"> |
+| All Cuboids Properties | Base Cuboid Properties | R Joint Properties |
+| :--------------------: | :--------------------: | :----------------: |
+| <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20j%20-%20Simulation%20-%20AllCuboidProperties.PNG" width="400"> | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20k%20-%20Simulation%20-%20BaseCuboidProperties.PNG" width="300"> | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20l%20-%20Simulation%20-%20BaseCuboidProperties.PNG" width="300"> |
 
 ### Coding
 
