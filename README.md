@@ -81,6 +81,10 @@ It is important to make sure all the correct properties are set. For each link, 
 | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20j%20-%20Simulation%20-%20AllCuboidProperties.PNG" width="400"> | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20k%20-%20Simulation%20-%20BaseCuboidProperties.PNG" width="300"> | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20l%20-%20Simulation%20-%20BaseCuboidProperties.PNG" width="300"> |
   
 The last change to the objects to make is to assign the correct hierarchy. To do so, drag the child object on top of the parent object to make the hierarchy link. It should look like this:
+  
+| Hierarchy |
+| :-------: |
+| <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20n%20-%20Simulation%20-%20Hierarchy.PNG" width="400"> |
 
 ### Coding
 
