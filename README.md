@@ -12,7 +12,7 @@ Finding the forward kinematic solution of a 2-link planar manipulator. Use the f
 
 ## Solution
 
-![2 link planar manipulator](https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20-%20Simulation%20-%20DH%20Examples-09.png)
+<img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20-%20Simulation%20-%20DH%20Examples-09.png" width="400">
 
 Assume the link lengths to be l<sub>1</sub< and l<sub>2</sub>, respectivley, with coresponding joint angles of &alpha; and &beta;.
 
