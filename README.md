@@ -66,13 +66,7 @@ To rotate each of these objects/items to their resepctive orientations (if neede
 | :---------------: | :---------: |
 | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20h%20-%20Simulation%20-%20MouseRotation.PNG" width="400"> | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20i%20-%20Simulation%20-%20Rotation.PNG" width="300"> |
   
-Next, it must be defined on where the manipulator should go. To do this, "Add > Dummy". Add two Dummy's in and rename one of the Dummy's to be labelled as "Target". Double click on the dummy icon to bring up the "Scene Object Properties". In here, change the Linked Dummy drop down to refer to the other dummy. The below example is the Target Dummy properties, so it is being linked to the Dummy. The Dummy color can be adjusted here as well.
-  
-| Dummy Properties |
-| :--------------: |
-| <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20m%20-%20Simulation%20-%20DummyProperties.PNG" width="400"> |
-  
-The Target Dummy is the input for the forward kinematic. It must remain in the same plane as our final link as the manipulator as we are only dealing with revolute joints to create the 2-Link Planar Manipulator. The reamining Dummy should be centered at the end of link 2.
+Next, it must be defined on where the manipulator currently is. To do this, "Add > Dummy". Add a Dummy and center it at the end of the final link (link 2).
   
 It is important to make sure all the correct properties are set. For each link, double click on the cuboid logo to bring up the "Scene Object Properties". For all cuboids, stay in the "Shape" tab, click on "Show Dynamic Properties Dialog" and unselect "Body is dynamic". If this is not deselected, then the link will fall to the ground due to gravity. For the base cuboid, click on the "Common" tab and select "Object is model base". For each joint, double click on the revolute joint logo to bring up the "Scene Object Properties". For all joints, stay in the "Joint" tab and change the Mode to "Passive Mode" to enable to the joint to drive the connected link.
   
@@ -98,4 +92,9 @@ The following are the steps and explanations for each section of code.
   
   - Open "TwoPlanarManipulator.py"
   - Read through the code
-  
+  - Lines 25-27: The necessary libraries to the run the code are imported
+  - Lines 29-44: Communication with CoppeliaSim is opened. Once this is opened, all object handles are stored and displayed, so the connection is verified.
+  - Lines 46-58: The object handles are stored and assigned to variable names.
+  - Lines 68-79: All manipulator paramters are defined and all conversions are completed.
+  - Lines 81-87: Utilizes the forward kinematics solution. The change in coordinate systems affects this part of the code.
+  - Lines 92-99: Communicate the values back to CoppeliaSim to move the joints accordingly. A loop was implemented with a 1% change, so a smooth simulation was sent instead of the manipulator automatically being sent to the target location.
