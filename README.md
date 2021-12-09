@@ -85,6 +85,12 @@ The last change to the objects to make is to assign the correct hierarchy. To do
 | Hierarchy |
 | :-------: |
 | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20n%20-%20Simulation%20-%20Hierarchy.PNG" width="400"> |
+  
+Finally, the connection for CoppeliaSim and Spyder to communicate must be opened. This is done by first creating a child script (Add > Associated customization script > Non Threaded) and copying the following to be the first line of code in it. 
+  
+  simRemoteApi.start(19999)
+  
+Now the code for the simulation can be written.
 
 ### Coding
 
