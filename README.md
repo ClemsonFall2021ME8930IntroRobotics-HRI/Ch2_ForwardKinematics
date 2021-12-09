@@ -53,6 +53,12 @@ Once a joint is added, to change the length to 0.3m and diameter to 0.1m, double
 | Setting the Joint Dimensions |
 | :--------------------------: |
 | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20e%20-%20Simulation%20-%20SettingJointDimensions.PNG" width="400"> |
+  
+To move each of these items to their respective locations, click on the object to be moved and click on "Object/Item Translation/Position". When the "Mouse Translation" tab is selected, the object/item can be dragged around the screen in the direction(s) that are selected. When the "Translation" tab is selected, type in the distance to the move the object/item in the specified direction the click on the respectie translate sel. button for the object to be moved.
+  
+| Mouse Translation | Translation |
+| :---------------: | :---------: |
+| <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20f%20-%20Simulation%20-%20MouseTranslation.PNG" width="400"> | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20g%20-%20Simulation%20-%20Translation.PNG" width="400"> |
 
 ### Coding
 
