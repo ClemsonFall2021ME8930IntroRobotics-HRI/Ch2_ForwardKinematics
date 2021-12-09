@@ -66,13 +66,21 @@ To rotate each of these objects/items to their resepctive orientations (if neede
 | :---------------: | :---------: |
 | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20h%20-%20Simulation%20-%20MouseRotation.PNG" width="400"> | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20i%20-%20Simulation%20-%20Rotation.PNG" width="300"> |
   
-Next, it must be defined on where the manipulator should go. To do this, "Add > Dummy". Add two Dummy's in and rename one of the Dummy's to be labelled as "Target". The Target Dummy is the input for the forward kinematic. It must remain in the same plane as our final link as the manipulator as we are only dealing with revolute joints to create the 2-Link Planar Manipulator. The reamining Dummy should be centered at the end of link 2.
+Next, it must be defined on where the manipulator should go. To do this, "Add > Dummy". Add two Dummy's in and rename one of the Dummy's to be labelled as "Target". Double click on the dummy icon to bring up the "Scene Object Properties". In here, change the Linked Dummy drop down to refer to the other dummy. The below example is the Target Dummy properties, so it is being linked to the Dummy. The Dummy color can be adjusted here as well.
+  
+| Dummy Properties |
+| :--------------: |
+| <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20m%20-%20Simulation%20-%20DummyProperties.PNG" width="400" |
+  
+The Target Dummy is the input for the forward kinematic. It must remain in the same plane as our final link as the manipulator as we are only dealing with revolute joints to create the 2-Link Planar Manipulator. The reamining Dummy should be centered at the end of link 2.
   
 It is important to make sure all the correct properties are set. For each link, double click on the cuboid logo to bring up the "Scene Object Properties". For all cuboids, stay in the "Shape" tab, click on "Show Dynamic Properties Dialog" and unselect "Body is dynamic". If this is not deselected, then the link will fall to the ground due to gravity. For the base cuboid, click on the "Common" tab and select "Object is model base". For each joint, double click on the revolute joint logo to bring up the "Scene Object Properties". For all joints, stay in the "Joint" tab and change the Mode to "Passive Mode" to enable to the joint to drive the connected link.
   
 | All Cuboids Properties | Base Cuboid Properties | R Joint Properties |
 | :--------------------: | :--------------------: | :----------------: |
 | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20j%20-%20Simulation%20-%20AllCuboidProperties.PNG" width="400"> | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20k%20-%20Simulation%20-%20BaseCuboidProperties.PNG" width="300"> | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20l%20-%20Simulation%20-%20BaseCuboidProperties.PNG" width="300"> |
+  
+The last change to the objects to make is to assign the correct hierarchy. To do so, drag the child object on top of the parent object to make the hierarchy link. It should look like this:
 
 ### Coding
 
