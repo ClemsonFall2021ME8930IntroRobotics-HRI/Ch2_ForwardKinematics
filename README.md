@@ -34,7 +34,7 @@ y<sub>2</sub> = y<sub>1</sub> + l<sub>2</sub>\*sin(&alpha;+&beta;)
 
 ### Scene setup:
   
-Open the "TwoPlanarManipulator_Simulation.ttt" file. For this problem, we create the manipulate with two main add actions: "Add > Primitive Shape >  Cuboid" for the linkages and "Add > Joint > Revolute" for the joints.
+Open the "TwoPlanarManipulator_Simulation.ttt" file. For this problem, we create the manipulate with two main add actions: "Add > Primitive Shape >  Cuboid" for the linkages and "Add > Joint > Revolute" for the joints. As each link and joint is added, rename them by double clicking on the name field in the Scene Hierachy, so they represent the correct order: Link1, Link2, Revolute_joint1, Revolute_joint2, etc.
   
 | Add Link | Add Joint |
 | :------: | :-------: |
@@ -65,6 +65,14 @@ To rotate each of these objects/items to their resepctive orientations (if neede
 | Mouse Rotation | Rotation |
 | :---------------: | :---------: |
 | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20h%20-%20Simulation%20-%20MouseRotation.PNG" width="400"> | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20i%20-%20Simulation%20-%20Rotation.PNG" width="400"> |
+  
+Next, it must be defined on where the manipulator should go. To do this, "Add > Dummy". Add two Dummy's in and rename one of the Dummy's to be labelled as "Target". The Target Dummy is the input for the forward kinematic. It must remain in the same plane as our final link as the manipulator as we are only dealing with revolute joints to create the 2-Link Planar Manipulator. The reamining Dummy should be centered at the end of link 2.
+  
+It is important to make sure all the correct properties are set. For each link, double click on the cuboid logo to bring up the "Scene Object Properties". For all cuboids, stay in the "Shape" tab, click on "Show Dynamic Properties Dialog" and unselect "Body is dynamic". If this is not deselected, then the link will fall to the ground due to gravity. For the base cuboid, click on the "Common" tab and select "Object is model base".
+  
+| All Cuboids Properties | Base Cuboid Properties |
+| :---------------: | :---------: |
+| <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20j%20-%20Simulation%20-%20AllCuboidProperties.PNG" width="400"> | <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20k%20-%20Simulation%20-%20BaseCuboidProperties.PNG" width="400"> |
 
 ### Coding
 
