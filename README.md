@@ -94,4 +94,8 @@ Now the code for the simulation can be written.
 
 ### Coding
 
-
+The following are the steps and explanations for each section of code.
+  
+  - Open "TwoPlanarManipulator.py"
+  - Read through the code
+  
