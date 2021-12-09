@@ -70,7 +70,7 @@ Next, it must be defined on where the manipulator should go. To do this, "Add > 
   
 | Dummy Properties |
 | :--------------: |
-| <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20m%20-%20Simulation%20-%20DummyProperties.PNG" width="400" |
+| <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20m%20-%20Simulation%20-%20DummyProperties.PNG" width="400"> |
   
 The Target Dummy is the input for the forward kinematic. It must remain in the same plane as our final link as the manipulator as we are only dealing with revolute joints to create the 2-Link Planar Manipulator. The reamining Dummy should be centered at the end of link 2.
   
