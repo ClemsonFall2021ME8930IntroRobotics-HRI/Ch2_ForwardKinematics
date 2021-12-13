@@ -95,6 +95,11 @@ The following are the steps and explanations for each section of code.
   - Lines 25-27: The necessary libraries to the run the code are imported
   - Lines 29-44: Communication with CoppeliaSim is opened. Once this is opened, all object handles are stored and displayed, so the connection is verified.
   - Lines 46-58: The object handles are stored and assigned to variable names.
-  - Lines 68-79: All manipulator paramters are defined and all conversions are completed.
-  - Lines 81-87: Utilizes the forward kinematics solution. The change in coordinate systems affects this part of the code.
-  - Lines 92-99: Communicate the values back to CoppeliaSim to move the joints accordingly. A loop was implemented with a 1% change, so a smooth simulation was sent instead of the manipulator automatically being sent to the target location.
+  - Lines 72-88: All manipulator paramters are defined and all conversions are completed.
+  - Lines 90-104: Utilizes the forward kinematics solution. The change in coordinate systems affects this part of the code.
+  - Lines 109-118: Communicate the values back to CoppeliaSim to move the joints accordingly. A loop was implemented with a 1% change, so a smooth simulation was sent instead of the manipulator automatically being sent to the target location.
+  - Line 120: Printing the forward kinemaitcs solution to compare back to the Dummy location to validate results. Results are validates at the following was printed: "The end effectors calculated x-position is 0.8397, and z-position is 1.4544". This matches the Dummy position as seen in the following figure.
+  
+| Dummy Position |
+| :------------: |
+| <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20o%20-%20Simulation%20-%20LocationConfirmation.PNG" width="400"> |
