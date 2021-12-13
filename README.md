@@ -92,7 +92,7 @@ The following are the steps and explanations for each section of code.
   
   - Open "TwoPlanarManipulator.py"
   - Read through the code
-  - Lines 25-27: The necessary libraries to the run the code are imported. Make sure all referred libraries are located in the same folder as the .py and .ttt files.
+  - Lines 25-27: The necessary libraries to the run the code are imported. Make sure all referred libraries (sim.py, simConst.py, remoteApi.dll) are located in the same folder as the .py and .ttt files.
   - Lines 29-44: Communication with CoppeliaSim is opened. Once this is opened, all object handles are stored and displayed, so the connection is verified.
   - Lines 46-58: The object handles are stored and assigned to variable names.
   - Lines 72-88: All manipulator paramters are defined and all conversions are completed.
