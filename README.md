@@ -102,4 +102,4 @@ The following are the steps and explanations for each section of code.
   
 | Dummy Position |
 | :------------: |
-| <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20o%20-%20Simulation%20-%20LocationConfirmation.PNG" width="600"> |
+| <img src="https://github.com/ClemsonFall2021ME8930IntroRobotics-HRI/Ch2_ForwardKinematics/blob/main/Figure%202.15%20o%20-%20Simulation%20-%20LocationConfirmation.PNG" width="800"> |
